@@ -5,7 +5,6 @@ namespace BytePlus\ByteplusSdkPhpLaravel;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use BytePlus\ByteplusSdkPhpLaravel\Commands\ByteplusSdkPhpLaravelCommand;
 
 class ByteplusSdkPhpLaravelServiceProvider extends PackageServiceProvider
 {
@@ -29,6 +28,6 @@ class ByteplusSdkPhpLaravelServiceProvider extends PackageServiceProvider
                     ->endWith(function (InstallCommand $command) {
                         $command->info('Thank you for support us!');
                     });
-        });
+            });
     }
 }
