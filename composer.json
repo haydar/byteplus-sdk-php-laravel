@@ -36,13 +36,13 @@
     },
     "autoload": {
         "psr-4": {
-            "BytePlus\\ByteplusSdkPhpLaravel\\": "src/",
-            "BytePlus\\ByteplusSdkPhpLaravel\\Database\\Factories\\": "database/factories/"
+            "BytePlus\\BytePlusSdkPhpLaravel\\": "src/",
+            "BytePlus\\BytePlusSdkPhpLaravel\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BytePlus\\ByteplusSdkPhpLaravel\\Tests\\": "tests/",
+            "BytePlus\\BytePlusSdkPhpLaravel\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -74,10 +74,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "BytePlus\\ByteplusSdkPhpLaravel\\ByteplusSdkPhpLaravelServiceProvider"
+                "BytePlus\\BytePlusSdkPhpLaravel\\BytePlusSdkPhpLaravelServiceProvider"
             ],
             "aliases": {
-                "Byteplus": "BytePlus\\ByteplusSdkPhpLaravel\\Facades\\Byteplus"
+                "BytePlus": "BytePlus\\BytePlusSdkPhpLaravel\\Facades\\BytePlus"
             }
         }
     },

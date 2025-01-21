@@ -41,9 +41,9 @@ Add following credentials to your env file.
 Finally, you may use the Byteplus facade to access the Byteplus services:
 
 ```php
-    use BytePlus\ByteplusSdkPhpLaravel\Facades\Byteplus;
+    use BytePlus\BytePlusSdkPhpLaravel\Facades\BytePlus;
 
-    $client = Byteplus::Vod();
+    $client = BytePlus::Vod();
 
     $vid = "123453";
     $expire = 6000000; // Sign Expire

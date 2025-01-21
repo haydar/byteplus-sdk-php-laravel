@@ -1,8 +1,8 @@
 <?php
 
-namespace BytePlus\ByteplusSdkPhpLaravel\Tests;
+namespace BytePlus\BytePlusSdkPhpLaravel\Tests;
 
-use BytePlus\ByteplusSdkPhpLaravel\ByteplusSdkPhpLaravelServiceProvider;
+use BytePlus\BytePlusSdkPhpLaravel\BytePlusSdkPhpLaravelServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -13,14 +13,14 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'BytePlus\\ByteplusSdkPhpLaravel\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'BytePlus\\BytePlusSdkPhpLaravel\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            ByteplusSdkPhpLaravelServiceProvider::class,
+            BytePlusSdkPhpLaravelServiceProvider::class,
         ];
     }
 

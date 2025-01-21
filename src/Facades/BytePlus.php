@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Facade;
  *
  * @see \App\Services\V4Service
  */
-class Byteplus extends Facade
+class BytePlus extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return \BytePlus\ByteplusSdkPhpLaravel\ByteplusSdkPhpLaravel::class;
+        return \BytePlus\BytePlusSdkPhpLaravel\BytePlusSdkPhpLaravel::class;
     }
 }

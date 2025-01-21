@@ -6,7 +6,7 @@ use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class ByteplusSdkPhpLaravelServiceProvider extends PackageServiceProvider
+class BytePlusSdkPhpLaravelServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
