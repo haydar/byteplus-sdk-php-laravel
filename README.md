@@ -1,6 +1,6 @@
 # Byteplus SDK Laravel 
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/haydar/byteplus-sdk-php-laravel.svg?style=flat-square)](https://packagist.org/packages/haydarsahin/byteplus-sdk-php-laravel)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/haydar/byteplus-sdk-php-laravel.svg?style=flat-square)](https://packagist.org/packages/haydar/byteplus-sdk-php-laravel)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/haydar/byteplus-sdk-php-laravel/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/haydar/byteplus-sdk-php-laravel/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/haydar/byteplus-sdk-php-laravel/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/haydarsahin/byteplus-sdk-php-laravel/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/haydar/byteplus-sdk-php-laravel.svg?style=flat-square)](https://packagist.org/packages/haydarsahin/byteplus-sdk-php-laravel)
