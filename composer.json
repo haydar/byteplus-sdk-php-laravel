@@ -1,6 +1,6 @@
 {
-    "name": "haydarsahin/byteplus-sdk-php-laravel",
-    "description": "This is my package byteplus-sdk-php-laravel",
+    "name": "haydar/byteplus-sdk-php-laravel",
+    "description": "This is laravel wrapper of byteplus-sdk-php community edition",
     "keywords": [
         "Haydar ŞAHİN",
         "laravel",
