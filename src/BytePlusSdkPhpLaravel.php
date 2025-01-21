@@ -9,7 +9,7 @@ use Byteplus\Service\Live;
 use Byteplus\Service\Sms;
 use Byteplus\Service\Vod\Vod;
 
-class ByteplusSdkPhpLaravel
+class BytePlusSdkPhpLaravel
 {
     public static function Cdn(): V4Curl
     {
