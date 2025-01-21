@@ -4,7 +4,6 @@ namespace BytePlus\ByteplusSdkPhpLaravel\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-
 /**
  * @method static V4Curl Cdn() Returns an authenticated client for the Cdn service.
  * @method static V4Curl Vod() Returns an authenticated client for the Vod service.

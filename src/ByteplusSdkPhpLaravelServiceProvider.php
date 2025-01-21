@@ -28,6 +28,6 @@ class ByteplusSdkPhpLaravelServiceProvider extends PackageServiceProvider
                     ->endWith(function (InstallCommand $command) {
                         $command->info('Thank you for support us!');
                     });
-        });
+            });
     }
 }

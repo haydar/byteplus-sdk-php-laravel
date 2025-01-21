@@ -41,7 +41,6 @@ class ByteplusSdkPhpLaravel
         $service->setAccessKey(config('byteplus.access_key'));
         $service->setSecretKey(config('byteplus.secret_key'));
 
-
         return $service;
     }
 }

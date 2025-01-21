@@ -1,19 +1,10 @@
-# This is my package byteplus-sdk-php-laravel
+# Byteplus SDK Laravel 
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/haydarsahin/byteplus-sdk-php-laravel.svg?style=flat-square)](https://packagist.org/packages/haydarsahin/byteplus-sdk-php-laravel)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/haydarsahin/byteplus-sdk-php-laravel/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/haydarsahin/byteplus-sdk-php-laravel/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/haydarsahin/byteplus-sdk-php-laravel/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/haydarsahin/byteplus-sdk-php-laravel/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/haydarsahin/byteplus-sdk-php-laravel.svg?style=flat-square)](https://packagist.org/packages/haydarsahin/byteplus-sdk-php-laravel)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
-
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/byteplus-sdk-php-laravel.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/byteplus-sdk-php-laravel)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
 
 ## Installation
 
@@ -23,38 +14,49 @@ You can install the package via composer:
 composer require haydarsahin/byteplus-sdk-php-laravel
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="byteplus-sdk-php-laravel-migrations"
-php artisan migrate
-```
-
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="byteplus-sdk-php-laravel-config"
+php artisan vendor:publish --tag="byteplus-config"
 ```
 
 This is the contents of the published config file:
 
 ```php
 return [
+    'access_key' => env('BYTEPLUS_ACCESS_KEY'),
+    'secret_key' => env('BYTEPLUS_SECRET_KEY'),
 ];
+
 ```
 
-Optionally, you can publish the views using
+## Get Started
 
-```bash
-php artisan vendor:publish --tag="byteplus-sdk-php-laravel-views"
+Add following credentials to your env file.
+
 ```
-
-## Usage
+    BYTEPLUS_ACCESS_KEY=
+    BYTEPLUS_SECRET_KEY=
+```
 
 ```php
-$byteplusSdkPhpLaravel = new BytePlus\ByteplusSdkPhpLaravel();
-echo $byteplusSdkPhpLaravel->echoPhrase('Hello, BytePlus!');
+    $client = Byteplus::Vod();
+
+    $vid = "123453";
+    $expire = 6000000; // Sign Expire
+    
+    $req = new VodGetPlayInfoRequest();
+    $req->setVid($vid);
+    $response = $client->getPlayAuthToken($req, $expire);
+    try {
+        echo $response;
+    } catch (Exception $e) {
+        echo $e, "\n";
+    } catch (Throwable $e) {
+        echo $e, "\n";
+    }
 ```
+
 
 ## Testing
 

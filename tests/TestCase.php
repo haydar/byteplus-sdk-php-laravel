@@ -2,9 +2,9 @@
 
 namespace BytePlus\ByteplusSdkPhpLaravel\Tests;
 
+use BytePlus\ByteplusSdkPhpLaravel\ByteplusSdkPhpLaravelServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use BytePlus\ByteplusSdkPhpLaravel\ByteplusSdkPhpLaravelServiceProvider;
 
 class TestCase extends Orchestra
 {
