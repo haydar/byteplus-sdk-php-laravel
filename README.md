@@ -38,8 +38,11 @@ Add following credentials to your env file.
     BYTEPLUS_ACCESS_KEY=
     BYTEPLUS_SECRET_KEY=
 ```
+Finally, you may use the Byteplus facade to access the Byteplus services:
 
 ```php
+    use BytePlus\ByteplusSdkPhpLaravel\Facades\Byteplus;
+
     $client = Byteplus::Vod();
 
     $vid = "123453";
